@@ -12,10 +12,10 @@ following: submitting names for the competitors, submitting the score for each s
 
 Start a new game with up to 6 players
 ```
-game = Game.new ["Holmes", "Watson"]
+game = Game.new "Holmes", "Watson"
 ```
 
-Record a bowl
+Record a bowl for the current player
 ```
 game.play 10  # strike
 game.play 6; game.play 4  # spare

@@ -4,7 +4,7 @@ class Game
 
   attr_reader :players, :player_index
 
-  def initialize(names)
+  def initialize(*names)
     raise ArgumentError.new("Must play with 6 or less players") if names.size > MAX_PLAYERS
     @players = []
     names.each {|name| @players << Player.new(name)}

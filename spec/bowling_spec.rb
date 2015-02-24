@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe "bowling" do
   before do
-    @game = Game.new ["Darth"]
+    @game = Game.new "Darth"
     @player = @game.players.first
     @bowls = [10,10,4,2]
   end
@@ -83,7 +83,7 @@ describe "bowling" do
   
   context "with multiple players" do
     before do
-      @game = Game.new ["Luke", "Leia"]
+      @game = Game.new "Luke", "Leia"
     end
     it "should switch between players" do
       expect(@game.players.size).to eql 2
